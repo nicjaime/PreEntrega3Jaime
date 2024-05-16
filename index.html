@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Suscripción</title>
+</head>
+<body>
+    <h1>Suscríbete con tu nombre y email</h1>
+    <form id="suscrib-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="nombre" placeholder="escribe tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="escribe tu correo" required>
+        <div id="estadoLogueado">--</div>
+        <button type="submit">Suscribirse</button>
+    </form>
+<h2>Seleccionar la opcion con la operacion correcta</h2>
+
+    <div class="productos">
+        <button class="producto"></button>
+        <button value="1" class="producto">202+202=404</button>
+        <button value="2" class="producto">45 x 3 = 320</button>
+        <button value="3" class="producto">900 / 8 = 200</button>
+        <button value="4" class="producto">560 - 80 = 350</button>
+    </div>
+    <button id="guardar">Guardar seleccion</button>
+
+
+
+    <h1>Selecciona una opción:</h1>
+    <select id="Select" onchange="opSelection()">
+        <option value="">Elige una opción</option>
+        <option value="Opción 1">Opción 1</option>
+        <option value="Opción 2">Opción 2</option>
+        <option value="Opción 3">Opción 3</option>
+        <option value="Opción 4">Opción 4</option>
+        <option value="Opción 5">Opción 5</option>
+        <option value="Opción 6">Opción 6</option>
+    </select>
+
+    <button onclick="ultimaSeleccion()">Ultima selección</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
